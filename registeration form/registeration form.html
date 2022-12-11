@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<title>Cyber Nation</title>
+<!--text,options,required,disabled,checkbox,radio button,label,password ,validation of phone number -->
+
+<head>
+    <style>
+     body{
+        background-attachment: fixed;
+        background-size: cover;
+        color:black;
+        margin-left:70px;
+        margin-right: 70px;
+     }
+     .box{
+        background-color: rgba(255, 255, 255, 0.393);
+        padding: 30px;
+     }
+
+    </style>
+    <body background="./Chennai-Campus.jpg">        
+        <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; color: rgb(247, 7, 7);"    ><p style="color:rgb(0, 0, 0); text-align: center;">Amrita Cyber Nation</p></h1><hr>
+        <div class="box">
+        <form action="text.php" method="post">
+        <b>Full name</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="username" placeholder="Enter your name" required>   <br><br>
+        
+        <b>Email Address</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <b>Password</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password"  id="password" placeholder="Enter your Password" required>
+        
+        <h2 style="text-align: center;">Participation</h2>
+        <h3>Register As :</h3>
+        <input type="radio" name="role" id="Student">
+        <label for="Student">Student</label>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="role" id="Faculty">
+        <label for="Faculty">Faculty</label>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="role" id="Industrys">
+        <label for="Industrys">Industrys</label>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="role" id="Others">
+        <label for="Others">Others</label><br><br><br>
+
+        <h3>Select Events :</h3>
+        <input type="checkbox" name="Events" id="Cyber Conclave">
+        <label for="Cyber Conclave">Cyber Conclave</label>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="Events" id="Cyber Industry Meet">
+        <label for="Cyber Industry Meet">Cyber Industry Meet</label>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="Events" id="Cyber Tech Fest">
+        <label for="Cyber Tech Fest">Cyber Tech Fest</label>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="Events" id="Cyber Abyaan">
+        <label for="Cyber Abyaan">Cyber Abyaan</label><br><br><br><hr><br>
+
+        <input type="SUBMIT" name="pay" value="Pay"><br><br>
+        <b>And get All the Information of Facility provided <a href="https://www.google.com">Here</a></b><br><br>
+
+        <h3>Upload your Id proof </h3>
+        <input type="file" name="id proof" id="id proof"><br><br><hr><br>
+
+        <label for="phone">Contact Us</label>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-">
+        <input type="button" name="enter" value="Enter"><br><br>
+        
+        <pre style="text-align:center ;"></pre><input type="submit" id="submit"></pre>
+        </select>
+
+
+        </form>
+    </div>
+    
+    </body>
