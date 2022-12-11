@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000000;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items_1 {
+        border-radius: 70px;
+      display: flex;
+      padding: 10px;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      margin-right: 20px;
+    }
+    .nav-items_2 {
+        border-radius: 70px;
+      display: flex;
+      padding: 10px;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      margin-right: 20px;
+    }
+    .nav-items_3 {
+        border-radius: 70px;
+      display: flex;
+      padding: 10px;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      margin-right: 20px;
+    }
+    .nav-items_4 {
+        border-radius: 70px;
+      display: flex;
+      padding: 10px;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      margin-right: 20px;
+    }
+
+    .nav-items a { 
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      padding: 35px 20px;
+    }
+
+    /* CSS for main element */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 800px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("amrita.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #5edaf0;
+      color: #000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+    }
+
+    .about-me img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+    form{
+      padding-left: 550px;
+      padding-top: 150px;
+    }
+  </style>
+</head>
+
+<body>
+<body bgcolor="grey"
+<body class="bgimg">
+    
+    <form>
+        <div class="frm">
+            <div class="hdng">REGISTER</div>
+            <table>
+                <tr>
+              <td>NAME :</td>
+              <td><input type="text" name="firstname" id="firstname" required placeholder="FIRST NAME"></td>
+              
+               </tr>
+               
+               &nbsp;
+               <tr>
+                   <td>EMAIL :</td>
+                   <td colspan="3"><input type="email" name="email" id="email" required placeholder="EMAIL                                           @gmail.com"><br></td>
+               </tr>
+               &nbsp;
+               <tr>
+                   <td>BIRTH DATE :</td>
+                  <td colspan="2"><input type="date" name="dob" id="dob" required placeholder="DATE OF  BIRTH"></td>
+               </tr>
+               <tr>
+                   <td>PHONE NO:</td>
+                   <td><input type="number" name="phno" id="phno" required placeholder="PHONE NUMBER"></td>
+               </tr>
+               <tr>
+                   <td>QUALIFICATION :</td>
+                   <td><input type="text" required placeholder="HIGHEST QUALIFICATION" name="q" id="q"></td>
+               </tr>
+               &nbsp;
+               <tr>
+                   <td>QUALIFICATION PROOF:</td>
+                   <td><input type="file" name="qprf" id="qprf" required ></td>
+               </tr>
+               &nbsp;
+               <tr>
+                   <td>GENDER :</td>
+                   
+                   <td>MALE :<input type="radio" name="gender" id="male"></td>
+               </tr>
+               <tr>
+                   <td><td>FEMALE :<input type="radio" name="gender" id="female"></td></td>
+               </tr>
+               <tr>
+                   <td>DESIGNATION :</td>
+                   <td><select name="designation" id="designation">
+                    <option value="none" selected disabled hidden>SELECT</option>
+                    <option value="Faculty">FACULTY</option>
+                    <option value="Research scholar">RESEARCH SCHOLAR </option>
+                    <option value="itworker">IT WORKER</option>
+                    <option value="ot">OTHER</option>
+                  </select></td>
+               </tr>     
+               <tr>
+                <td>COUNTRY :</td>
+                <td><select name="country" id="country">
+                 <option value="india" selected>INDIA</option>
+                 <option value="russia">RUSSIA </option>
+                 <option value="america">AMERICA</option>
+                 <option value="china">CHINA</option>
+                 <option value="korea">KOREA</option>
+                 <option value="iran">IRAN</option>
+                 <option value="nepal">NEPAL</option>
+               </select></td>
+            </tr> 
+            <tr>
+                <td>Familiarity with OS</td>
+                <td><input type="range"></td>
+            </tr> 
+            <tr>
+                <td>DOMAIN :</td>
+            </tr> 
+            <tr>
+                <td><input type="checkbox" name="CYBER ANALYSIS" id="DOMAIN"></td>
+                <td><label for="CYBER ANALYSIS">CYBER ANALYSIS</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="CYBER DEFENSE" id="DOMAIN"></td>
+                <td><label for="CYBER DEFENSE">CYBER DEFENSE</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="HACKING" id="DOMAIN"></td>
+                <td><label for="HACKING">HACKING</td>
+            </tr>
+           
+            
+              </table>
+              <div class="su"><input type="submit"></div>
+            </div>
+                
+        </div>
+        
+    </form>
+</body>
+</html>
