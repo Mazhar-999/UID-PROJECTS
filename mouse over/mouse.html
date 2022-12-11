@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mouse Events</title>
+    <script>
+        function image1(x) {
+            x.src = "benz.jpg";
+            x.style.width = "300px";
+            x.style.height = "300px";
+        }
+
+        function image2(x) {
+            x.src = "ferarri.jpg";
+            x.style.width = "300px";
+            x.style.height = "300px";
+        }
+
+        function mouseDown(x) {
+            x.src = "olls.jpg";
+        }
+
+        function mouseUp(x) {
+            x.src = "gtr.jpg"
+        }
+
+        function image(x) {
+            x.src = "jaguar.jpeg";
+            x.style.width = "300px";
+            x.style.height = "300px";
+        }
+
+        function img(x) {
+            x.src = "bmw1.jpg";
+            x.style.width = "500px";
+            x.style.height = "300px";
+        }
+
+        function dbclick(x) {
+            x.src = "bentley.jpg";
+            x.style.width = "500px";
+            x.style.height = "300px";
+        }
+    </script>
+    <link rel="stylesheet" href="mous.css">
+</head>
+
+<body>
+    <body style="background-image:url(bg.jpg);background-attachment:fixed;background-repeat:no-repeat;">
+    <div style="font-size: 15px;color:rgb(0, 0, 0);position: absolute;">
+        <p>MAZHAR MASHOOD<br>CH.EN.U4CYS21042</p>
+        <a href="../index.html" style="text-decoration:none;color:rgb(0, 0, 0);">Main Page</a>
+    </div>
+    <center><img src="imag.png"></center>
+    <div class="navbar">
+        <a href="index.html" class="active">JS Mouse Events</a>
+        <a href="r.html">JS Regular Expression</a>
+    </div>
+    <div class="part1">
+        <div class="one">
+            <h2>Mouse onclick</h2>
+            <img onclick="image(this)" src="benz1.jpg" width="300" height="300">
+        </div>
+        <div class="two">
+            <h2>Mouse enter and leave</h2>
+            <img onmouseenter="image1(this)" onmouseleave="image2(this)" src="ferarri1.jpg" width="300" height="300">
+        </div>
+        <div class="three">
+            <h2>Mouse up and down</h2>
+            <img onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" src="olls1.jpg" width="300" height="300">
+        </div>
+    </div>
+    <div class="part2">
+        <div class="four">
+            <h2>Mouse oncontextmenu</h2>
+            <img oncontextmenu="img(this)" contextmenu="mymenu" src="gtr1.jpg" width="500" height="300">
+        </div>
+        <div class="five">
+            <h2>Mouse doubleclick</h2>
+            <img ondblclick="dbclick(this)" contextmenu="mymenu" src="jaguar1.jpg" width="500" height="300">
+        </div>
+    </div>
+    <div class="six">
+        <center>
+            <h2>Mouse over and out</h2>
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" loop muted height="400px"
+                width="600px">
+                <source src="vdeo.mp4" type="video/mp4">
+                </source>
+            </video>
+        </center>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+body{
+    background-image: url("bg.jpg");
+    height:fit-content
+    top: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+  }
+.part1{
+    display:flex;
+    padding-left: 70px;
+    
+}
+.part2{
+    display:flex;
+    padding-left: 35px;
+    
+}
+.one{
+    padding-left: 70px;
+    text-align: center;
+}
+.two{
+    padding-left: 150px;
+    text-align: center;
+}
+.three{
+    padding-left: 150px;
+    text-align: center;
+}
+.four{
+    padding-left: 130px;
+    text-align: center;
+}
+.five{
+    padding-left: 150px;
+    text-align: center;
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgb(111, 108, 108);
+    padding-left: 550px;
+    
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  
+  
+  .navbar a:hover {
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .navbar a.active {
+    background-color: rgb(109, 109, 109);;
+    color: rgb(0, 0, 0);
+  }

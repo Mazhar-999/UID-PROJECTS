@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+    <style>
+        body {
+            background-image: url("bg.jpg");
+            height: 600px;
+            top: 0%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(77, 77, 77);
+            padding-left: 550px;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(255, 0, 0);
+        }
+
+        .navbar a.active {
+            background-color: rgb(77, 77, 77);
+            ;
+            color: rgb(0, 0, 0);
+        }
+
+        p {
+            line-height: 1.5em;
+            font-size: 1.2em;
+        }
+
+        h3 {
+            font-size: 1.3em;
+        }
+
+        .container {
+
+            min-width: 320px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 60%;
+
+        }
+
+        .block {
+            background-color: #555555d6;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 100px 100px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size: 15px;color:rgb(0, 0, 0);position: absolute;">
+        <p>MAZHAR MASHOOD<br>CH.EN.U4CYS21042</p>
+        <a href="../index.html" style="text-decoration:none;color:white">Main Page</a>
+    </div>
+    <center><img src="imag.png"></center>
+    
+    <div class="navbar">
+        <a href="mouse.html">JS Mouse Events</a>
+        <a href="r.html" class="active">JS Regular Expression</a>
+    </div>
+    <center>
+        
+        <div class="container block">
+            <h2>Given Sentence : </h2>
+            <h3>Welcome to MZ TUNES, We MODIFY CARS</h3>
+            <p>To find position of CARS <button onclick="finder()">Click Me </button> </p>
+
+
+            <p id="demo"></p>
+            <h3 id="te">MZ TUNES IS MAINLY BOUGHT TO MODIFY YOUR CARS ON YOUR WAY.</h3>
+            <p>To replace for with IN <button onclick="rep()">Click Me</button> </p>
+        </div>
+    </center>
+    <script>
+        function finder() {
+            let text = "Welcome to MZ TUNES, We MODIFY CARS";
+            let n = text.search(/CARS/i);
+            document.getElementById("demo").innerHTML = "CARS found at : " + n;
+        }
+
+        function rep() {
+            let text = document.getElementById("te").innerHTML;
+            document.getElementById("te").innerHTML =
+                text.replace(/ON/i, "IN");
+        }
+    </script>
+
+</body>
+
+</html>
